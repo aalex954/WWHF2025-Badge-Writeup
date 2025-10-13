@@ -192,8 +192,6 @@ Using the mobile app we were able to discover and connect to the badge.
 
 <img width="403" height="688" alt="image" src="https://github.com/user-attachments/assets/325ee9d9-c66a-45dc-b0ed-da0b08e9f5c8" />
 
-
-
 Enumerating the advertised service and its characteristics uncovered three interesting values.
 
 The first (hexadecimal byte string) provided instructions for the remaining two. 
@@ -254,6 +252,7 @@ The flags displayed indicate a `flag semaphore` coded message.
 
 Using the [following table](https://en.m.wikipedia.org/wiki/Flag_semaphore) we deciphered the message: `PIRATES OFF THE PORT BOW`
 
+---
 
 #### Badge CTF - Decoding Challenge 3 - Triple B64 ASCII
 
