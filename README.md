@@ -3,7 +3,13 @@ Solution to the Badge CTF for WWHF 2025 Deadwood
 
 **Team**: `No_Use_For_A_Name`
 
+<img width="679" height="339" alt="image" src="https://github.com/user-attachments/assets/f7b349c0-9ae3-4a5c-a2d3-35727bed45fa" />
+
+---
+
 <img src="https://github.com/user-attachments/assets/ddbb0c1b-7b6c-422f-af16-778b846725bb" alt="drawing" width="200"/>
+
+---
 
 ## Challenges
 
@@ -26,18 +32,18 @@ nrf bluetooth initialized
 
 - Q: What is the version of the BIOS displayed on the badge screen during boot?
   - A: 	`8.415`
- 
+ ---
 #### Badge CTF - BIOS Challenge 2
 
 - Q: How many kilobytes of SRAM does the badge microcontroller have?
   - A: 	`512`
 
-
+---
 ### Shell Window Challenges
 
 The shell window challenges are presented as a random splash screen displayed when the badge boots. 
 The splash screens can be viewed at boot or by dumpging the firmware and observing the embedded strings. 
-
+---
 #### Badge CTF - Shell Window Challenge 1
 
 ```
@@ -53,7 +59,7 @@ User's comment
 - Q: What is the password associated with the Admin user (case sensitive)?
   - A: `L3tM31n!`
 
-
+---
 #### Badge CTF - Shell Window Challenge 2
 
 ```
@@ -68,7 +74,7 @@ Rtr# copy run sta
 
 - Q: What is the read-write SNMP community string value configured in the Cisco router prompt?
   - A: `priv`
-
+---
 #### Badge CTF - Shell Window Challenge 3
 
 ```
@@ -83,7 +89,7 @@ msf> session -i 1
 
 - Q: What Metasploit module was used to successfully establish a Meterpreter session?
   - A: `ms08-067`	
-
+---
 #### Badge CTF - Shell Window Challenge 4
 
 ```
@@ -98,7 +104,7 @@ COMM    BAS BASIC COM
 
 - Q: What version of IBM PC DOS is displayed in the shell window?
   - A: `1.10`
-
+---
 #### Badge CTF - Shell Window Challenge 5
 
 ```
@@ -114,7 +120,7 @@ E_X86_64 x86_64
 
 - Q: What MacOS kernel version is displayed in the shell window?
   - A: `15.4.0`
-
+---
 #### Badge CTF - Shell Window Challenge 6
 
 ```
@@ -130,7 +136,7 @@ e for function main:
 
 - Q: What is the target address for the jmp operation in the gdb disassembly?
   - A: `0x115`
-
+---
 #### Badge CTF - Shell Window Challenge 7
 
 ```
@@ -146,7 +152,7 @@ Sun 01-Apr-90 03:11
 
 - Q: What verion of Commodore OS is displayed in the Commodore shell window?
   - A: `27.3`
-
+---
 #### Badge CTF - Shell Window Challenge 8
 
 ```
@@ -160,7 +166,7 @@ Sys open: Level (9)
 
 - Q: What password is used with sshnuke to gain access to the remote host at IP address 10.2.2.2?
   - A: `Z10N0101`
-
+---
 #### Badge CTF - Shell Window Challenge 9
 
 ```
@@ -175,7 +181,7 @@ CODE  PRFX NUMBER
 
 - Q: What phone number is targeted by the war dialer?
   - A: `(311) 399-0001`
-
+---
 ### Bonus Challenges - Communication
 
 Hitting the right button repeatedly eventually causes a message to be displayed on the screen that gives a starting point: `NRF CONNECT MOBILE APP`
@@ -194,7 +200,7 @@ The first (hexadecimal byte string) provided instructions for the remaining two.
 - Raw value: (0x) `2D-2D-2D-20-43-72-61-63-6B-20-74-68-65-20-48-61-73-68-20-2D-2D-2D`
   - --- CRACK THE HASH ---
 
-
+---
 #### Badge CTF - Communication Challenge 1 - SHA1 (1)
 
 - Raw value: (0x) `66-37-30-66-36-33-64-65-66-32-35-34-33-66-37-37-66-66-32-36-38-35-37-39-64-64-36-65-63-65-31-32-64-30-66-37-66-63-37-38`
@@ -204,7 +210,7 @@ Using CrackStation.net to crack the SHA1 hash
 
 `f70f63def2543f77ff268579dd6ece12d0f7fc78`	`sha1`	`accessit`
 
-
+---
 #### Badge CTF - Communication Challenge 2 - SHA1 (2)
 
 - Raw value: (0x)   
@@ -215,30 +221,36 @@ Using CrackStation.net to crack the SHA1 hash
 
 `cdc5b000862320da91e4d66bc33792aabc224ff3`	`sha1`	`darkimage`
 
-
+---
 #### Badge CTF - Decoding Challenge 1 - Light Max
 
 The sensor on the upper left of the badge detects light.
 Connecting to the badge using putty on COM3 reveals the light sensor values logged in real time. 
 Shining a flashlight on the sensor spiked the value to max and paused the logging
 
-INSERT IMAGE
+<img width="776" height="451" alt="image" src="https://github.com/user-attachments/assets/a566974f-1fee-4ff2-a797-4b16ca75ad67" />
+
 
 The following pattern is displayed on the badge screen
 
-INSERT IMAGE
+<img width="283" height="72" alt="image" src="https://github.com/user-attachments/assets/89f4ecf0-3050-4c0f-8560-5e79584dc3ec" />
+
+
 
 The displayed symbols indicate a Pig Pen Cipher
 
 Decoding the cipher reveals the flag: `SNORT IS IN MY SECURITY PIGPEN`
 
-
+---
 #### Badge CTF - Decoding Challenge 2 - Light Min
 
 The sensor on the upper left of the badge detects light.
 Connecting to the badge using putty on COM3 reveals the light sensor values logged in real time.
 Blocking all the light until the sensor returns `0` reveals the next pattern. 
 The flags displayed indicate a `flag semaphore` coded message.
+
+<img width="392" height="257" alt="image" src="https://github.com/user-attachments/assets/0acd809e-0f7b-4000-9493-b99e955e4cec" />
+
 
 Using the [following table](https://en.m.wikipedia.org/wiki/Flag_semaphore) we deciphered the message: `PIRATES OFF THE PORT BOW`
 
@@ -249,14 +261,18 @@ Connecting to the badge with a serial connection using putty on COM3, then hitti
 
 Converting from Base64 3 times produced the flag: `Knowledge is power!`
 
+---
 #### Badge CTF - Decoding Challenge 4 - Moorse Code
 
 Hitting the left button also triggers a blinking light on the bottom left of the screen on the badge. 
 Decoding the flashing lights was challenging but generating a graph of the red light intensity helped visualize the dots, dashes, and spaces. 
 
-INSERT GRAPH IMAGE
+<img width="1500" height="600" alt="image" src="https://github.com/user-attachments/assets/4c1de150-d7be-4919-8823-5aa0df2111e3" />
+
 
 The final conversion produced the flag: `KRACKED`
+
+---
 
 #### Badge CTF - Decoding Challenge 5
 
@@ -277,6 +293,8 @@ We transcribed the binary values displayed and converted them as shown below:
 3. ASCII Flag: 
     1. `pHisHinG`
 
+---
+
 #### Badge CTF - Decoding Challenge 6 - ROT 13
 
 Hitting the right button displays one of 6 messages. 
@@ -284,6 +302,8 @@ Hitting the right button displays one of 6 messages.
 Message 1: `Ovgr gur ohyyrg`
 
 ROT(13) = `Bite the bullet`
+
+---
 
 #### Badge CTF - Decoding Challenge 7 - Caesar Cipher
 
@@ -293,6 +313,8 @@ Message 2: `Gwjfp ymj nhj`
 
 - Caesar Cipher (right 5 OR left 21) = `break the ice`
 
+---
+
 #### Badge CTF - Decoding Challenge 8 - B64
 
 Hitting the right button displays one of 6 messages.  
@@ -301,6 +323,8 @@ Message 4: `QmlyZCBpbiAgdGhlICBoYW5k`
 
 From Base64 = `Bird in the hand`
 
+---
+
 #### Badge CTF - Decoding Challenge 9 - B32
 
 Hitting the right button displays one of 6 messages. 
@@ -308,6 +332,8 @@ Hitting the right button displays one of 6 messages.
 Message 5: `INZHSIDPOZSXEIDTOBUWY3DFMQQG22LMNM======`
 
 From Base32 = `Cry over spilled milk`
+
+---
 
 #### Badge CTF - Decoding Challenge 10 - Baconian A/B cipher 
 
@@ -341,5 +367,42 @@ Flag:
     • baaba → T
     • abbab → O
 
+---
 
+## Firmware Extraction and Strings
+
+`λ python -m esptool -p COM3 -b 460800 read_flash 0x000000 0x800000 flash.bin`
+
+`λ python esp32_image_parser.py show_partitions ..\..Downloads\full_flash.bin`
+
+<img width="592" height="912" alt="image" src="https://github.com/user-attachments/assets/c742046d-071f-4a66-8b5b-09417293096b" />
+
+`λ Strings.exe -n 8 .\app.bin`
+
+```
+BADGE BLE
+5b1efd49-02d1-46b3-9e4d-e7385878a19d
+08834ffd-fc4e-4e7c-966b-11e6f6b1406e
+cdc5b000862320da91e4d66bc33792aabc224ff3
+79ff92fb-2276-4fec-ba79-c9b133e8c00e
+
+--- Crack the Hash ---
+7d10c989-0fe0-44bb-a65a-64963a9b8ab4
+F70f63def2543f77ff268579dd6ece12d0f7fc78
+
+3 Characteristics defined! Now you can read it in your phone!
+
+Client connected timer started
+Client connected for too long
+Client disconnected timer reset
+
+Ovgr gur ohyyrg
+Gwjfp ymj nhj
+abaab baaaa babba abbba baaba abbab
+
+QmlyZCBpbiAgdGhlICBoYW5k
+INZHSIDPOZSXEIDTOBUWY3DFMQQG22LMNM======
+nRF Connect Mobile App
+CIPHER CHALLENGE
+```
 
