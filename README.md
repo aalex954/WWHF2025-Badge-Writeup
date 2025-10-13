@@ -3,12 +3,11 @@ Solution to the Badge CTF for WWHF 2025 Deadwood
 
 **Team**: `No_Use_For_A_Name`
 
-
-INSERT BLACK BADE PHOTO HERE
+<img src="https://github.com/user-attachments/assets/ddbb0c1b-7b6c-422f-af16-778b846725bb" alt="drawing" width="200"/>
 
 ## Challenges
 
-BRIEF DESCRIPTION OF MAIN CHALLENGES HERE
+The badge CTF included 23 flags divided into two sets of challenges (11 splash scrren and 12 bonus decoding and BLE)
 
 ### BIOS Challenges
 
@@ -185,7 +184,11 @@ A quick search reveals a mobile app called: `nRF Connect for Mobile`
 
 Using the mobile app we were able to discover and connect to the badge.
 
-Enumerating the advertised Service and its Characreristics uncovered three interesting values.
+<img width="403" height="688" alt="image" src="https://github.com/user-attachments/assets/325ee9d9-c66a-45dc-b0ed-da0b08e9f5c8" />
+
+
+
+Enumerating the advertised service and its characteristics uncovered three interesting values.
 
 The first (hexadecimal byte string) provided instructions for the remaining two. 
 - Raw value: (0x) `2D-2D-2D-20-43-72-61-63-6B-20-74-68-65-20-48-61-73-68-20-2D-2D-2D`
