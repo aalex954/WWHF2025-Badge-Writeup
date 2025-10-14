@@ -5,13 +5,9 @@ Solution to the Badge CTF for WWHF 2025 Deadwood
 
 <img width="679" height="339" alt="image" src="https://github.com/user-attachments/assets/f7b349c0-9ae3-4a5c-a2d3-35727bed45fa" />
 
----
+## Challenges
 
 <img src="https://github.com/user-attachments/assets/ddbb0c1b-7b6c-422f-af16-778b846725bb" alt="drawing" width="200"/>
-
----
-
-## Challenges
 
 The badge CTF included 23 flags divided into two sets of challenges (11 splash screen (BIOS and Shell) and 12 bonus (decoding and BLE))
 
@@ -46,6 +42,8 @@ nrf bluetooth initialized
 
 The shell window challenges are presented as a random splash screen displayed when the badge boots. 
 The splash screens can be viewed at boot or by dumpging the firmware and observing the embedded strings. 
+
+![BIOS](https://github.com/user-attachments/assets/3db63e78-beb9-4eab-b459-6ba89d3df6c7)
 
 ---
 
@@ -248,6 +246,9 @@ Using CrackStation.net to crack the SHA1 hash
 #### Badge CTF - Decoding Challenge 1 - Light Max
 
 The sensor on the upper left of the badge detects light.
+
+<img width="386" height="481" alt="image" src="https://github.com/user-attachments/assets/38f50f28-ad58-4bce-b4b4-d9c45b94df6a" />
+
 Connecting to the badge using putty on COM3 reveals the light sensor values logged in real time. 
 Shining a flashlight on the sensor spiked the value to max and paused the logging
 
@@ -256,11 +257,11 @@ Shining a flashlight on the sensor spiked the value to max and paused the loggin
 
 The following pattern is displayed on the badge screen
 
-<img width="283" height="72" alt="image" src="https://github.com/user-attachments/assets/89f4ecf0-3050-4c0f-8560-5e79584dc3ec" />
-
-
+<img width="424" height="345" alt="image" src="https://github.com/user-attachments/assets/f985e4eb-15dc-4795-9dbc-9263f03c043e" />
 
 The displayed symbols indicate a Pig Pen Cipher
+
+<img width="283" height="72" alt="image" src="https://github.com/user-attachments/assets/89f4ecf0-3050-4c0f-8560-5e79584dc3ec" />
 
 Decoding the cipher reveals the flag: `SNORT IS IN MY SECURITY PIGPEN`
 
@@ -269,6 +270,7 @@ Decoding the cipher reveals the flag: `SNORT IS IN MY SECURITY PIGPEN`
 #### Badge CTF - Decoding Challenge 2 - Light Min
 
 The sensor on the upper left of the badge detects light.
+
 Connecting to the badge using putty on COM3 reveals the light sensor values logged in real time.
 Blocking all the light until the sensor returns `0` reveals the next pattern. 
 The flags displayed indicate a `flag semaphore` coded message.
@@ -303,6 +305,9 @@ The final conversion produced the flag: `KRACKED`
 #### Badge CTF - Decoding Challenge 5
 
 Hitting the left button triggers a light pattern on the "keyboard" section of the badge. 
+
+<img width="551" height="270" alt="image" src="https://github.com/user-attachments/assets/e3f77afc-5943-4c55-8fbd-b4e674e303bc" />
+
 We transcribed the binary values displayed and converted them as shown below:
 
 ```
