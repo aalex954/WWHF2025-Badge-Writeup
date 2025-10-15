@@ -308,7 +308,7 @@ Converting from Base64 3 times produced the flag: `Knowledge is power!`
 
 ---
 
-#### Badge CTF - Decoding Challenge 4 - Moorse Code
+#### Badge CTF - Decoding Challenge 4 - Morse Code
 
 Hitting the left button also triggers a blinking light on the bottom left of the screen on the badge. 
 Decoding the flashing lights was challenging but generating a graph of the red light intensity helped visualize the dots, dashes, and spaces. 
