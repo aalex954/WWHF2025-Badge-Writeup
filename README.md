@@ -402,7 +402,7 @@ Flag:
 
 ## Firmware Extraction and Strings
 
-`λ python -m esptool -p COM3 -b 460800 read_flash 0x000000 0x800000 flash.bin`
+`λ python -m esptool -p COM3 -b 460800 read_flash 0x000000 0x800000 full_flash.bin`
 
 `λ python esp32_image_parser.py show_partitions ..\..Downloads\full_flash.bin`
 
