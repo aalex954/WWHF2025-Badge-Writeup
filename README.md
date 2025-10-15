@@ -5,6 +5,15 @@ Solution to the Badge CTF for WWHF 2025 Deadwood
 
 <img width="679" height="339" alt="image" src="https://github.com/user-attachments/assets/f7b349c0-9ae3-4a5c-a2d3-35727bed45fa" />
 
+## Sections
+
+- [Challenges - BIOS](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bios-challenges)
+- [Challenges - Shell Windows](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bios-challenges)
+- [Bonus Challenges - BLE Communication](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bonus-challenges---communication)
+- [Bonus Challenges - Decoding](https://github.com/aalex954/WWHF2025-Badge-Writeup/edit/master/README.md#bonus-challenges---decoding)
+- [Extra - Firmware](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#firmware-extraction-and-strings)
+
+  
 ## Challenges
 
 <img src="https://github.com/user-attachments/assets/ddbb0c1b-7b6c-422f-af16-778b846725bb" alt="drawing" width="200"/>
@@ -242,6 +251,8 @@ Using CrackStation.net to crack the SHA1 hash
 `cdc5b000862320da91e4d66bc33792aabc224ff3`	`sha1`	`darkimage`
 
 ---
+
+### Bonus Challenges - Decoding
 
 #### Badge CTF - Decoding Challenge 1 - Light Max
 
