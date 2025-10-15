@@ -1,22 +1,26 @@
-# WWHF2025-Badge-Writeup
+# Wild West Hacking Fest 2025 Badge Writeup
+
 Solution to the Badge CTF for WWHF 2025 Deadwood
 
 **Team**: `No_Use_For_A_Name`
 
-<img width="679" height="339" alt="image" src="https://github.com/user-attachments/assets/f7b349c0-9ae3-4a5c-a2d3-35727bed45fa" />
+<img width="579" height="400" alt="image" src="https://github.com/user-attachments/assets/f7b349c0-9ae3-4a5c-a2d3-35727bed45fa" />
+
+<img src="https://github.com/user-attachments/assets/ddbb0c1b-7b6c-422f-af16-778b846725bb" alt="drawing" width="200" height="400"/>
 
 ## Sections
 
-- [Challenges - BIOS](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bios-challenges)
-- [Challenges - Shell Windows](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bios-challenges)
-- [Bonus Challenges - BLE Communication](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bonus-challenges---communication)
-- [Bonus Challenges - Decoding](https://github.com/aalex954/WWHF2025-Badge-Writeup/edit/master/README.md#bonus-challenges---decoding)
+- [Challenges](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#challenges)
+  - [BIOS](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bios-challenges)
+  - [Shell Windows](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bios-challenges)
+  - [BLE Communication](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#bonus-challenges---communication)
+  - [Decoding](https://github.com/aalex954/WWHF2025-Badge-Writeup/edit/master/README.md#bonus-challenges---decoding)
 - [Extra - Firmware](https://github.com/aalex954/WWHF2025-Badge-Writeup?tab=readme-ov-file#firmware-extraction-and-strings)
 
   
 ## Challenges
 
-<img src="https://github.com/user-attachments/assets/ddbb0c1b-7b6c-422f-af16-778b846725bb" alt="drawing" width="200"/>
+
 
 The badge CTF included 23 flags divided into two sets of challenges (11 splash screen (BIOS and Shell) and 12 bonus (decoding and BLE))
 
