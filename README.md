@@ -298,7 +298,7 @@ Decoding the flashing lights was challenging but generating a graph of the red l
 <img width="1500" height="600" alt="image" src="https://github.com/user-attachments/assets/4c1de150-d7be-4919-8823-5aa0df2111e3" />
 
 
-The final conversion produced the flag: `KRACKED`
+The final conversion produced the flag: `CRACKED`
 
 ---
 
