@@ -4,6 +4,11 @@ Solution to the Badge CTF for WWHF 2025 Deadwood
 
 **Team**: `No_Use_For_A_Name`
 
+- aalex954
+- Dutch-Sec
+- eao0418
+- darth_vad3r
+
 <table>
   <tr>
     <img width="75%" height="20%" alt="image" src="https://github.com/user-attachments/assets/f7b349c0-9ae3-4a5c-a2d3-35727bed45fa" />
